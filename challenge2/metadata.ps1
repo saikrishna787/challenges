@@ -1,5 +1,4 @@
-$instanceName = "instance-1" #name of the instance
-
+$instanceName = "instance-1"
 $instanceMetadata = gcloud compute instances describe $instanceName --format json
 
 $jsonString = ConvertTo-Json $instanceMetadata
